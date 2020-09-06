@@ -8,3 +8,7 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+- task: AzurePowerShell@5
+  inputs:
+    ScriptType: 'FilePath'
+    ScriptPath: 'posershell.ps1'
